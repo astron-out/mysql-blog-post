@@ -5,16 +5,33 @@
     "fs": "^0.0.1-security",
     "mysql2": "^3.6.1",
     "nodemon": "^3.0.1",
+    "parcel": "^2.10.0",
     "path": "^0.12.7",
     "uuid": "^9.0.1"
   },
   "name": "blog-post",
   "version": "1.0.0",
   "description": "This is the practise page for NodeJs and MySQL (Blog-Post)",
-  "main": "app.js",
+  "default": "app.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "nodemon app.js",
+    "build": "parcel build app.js --dist-dir ./dist"
   },
   "author": "Khudoyberdi Shamsiyev",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "assert": "^2.1.0",
+    "browserify-zlib": "^0.2.0",
+    "buffer": "^6.0.3",
+    "crypto-browserify": "^3.12.0",
+    "events": "^3.3.0",
+    "path-browserify": "^1.0.1",
+    "querystring-es3": "^0.2.1",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
+    "string_decoder": "^1.3.0",
+    "timers-browserify": "^2.0.12",
+    "url": "^0.11.3",
+    "util": "^0.12.5"
+  }
 }
