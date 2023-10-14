@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Post</title>
+    <%- include('includes/fonts') %>
+        <link rel="stylesheet" href="/styles/style.css">
+        <link rel="stylesheet" href="/styles/form.css">
+        <script src="/script/script.js" defer></script>
+</head>
+
+<body>
+    <%- include('includes/header') %>
+
+        <main>
+            <section id="form-sec">
+                <div id="ct-con">
+                    <form id="ct-form" action="/posts" method="POST">
+                        <h1>Create Post</h1>
+                        <label for="titauth">Author Name*</label>
+                        <input type="text" name="titleauthor" id="titauth" required>
+                        <label for="titpos">Post Title*</label>
+                        <input type="text" name="titlepost" id="titpos" required>
+                        <label for="sumpos">Post Summary*</label>
+                        <input type="text" name="summary" id="sumpos" required>
+                        <label for="des-con">Describtion*</label>
+                        <textarea name="describtion" id="des-con" rows="6" required></textarea>
+                        <button id="ct-btn" type="submit">Create</button>
+                    </form>
+                </div>
+
+                <div id="text-con">
+                    <h2>Create Your Own Post.</h2>
+                    <p id="st">Here You can create your posts on any topics. You can share your summaries on life your
+                        destanations
+                        and other</p>
+                    <p id="ws">Wish you success!</p>
+                </div>
+            </section>
+        </main>
+
+        <%- include('includes/footer') %>
+</body>
+
+</html>

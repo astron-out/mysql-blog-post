@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security",
+    "mysql2": "^3.6.1",
+    "nodemon": "^3.0.1",
+    "path": "^0.12.7",
+    "uuid": "^9.0.1"
+  },
+  "name": "blog-post",
+  "version": "1.0.0",
+  "description": "This is the practise page for NodeJs and MySQL (Blog-Post)",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "Khudoyberdi Shamsiyev",
+  "license": "MIT"
+}

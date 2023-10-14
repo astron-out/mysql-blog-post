@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read This</title>
+    <%- include('includes/fonts') %>
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/vw-post.css">
+    <script src="/script/script.js" defer></script>
+</head>
+<body>
+    <%- include('includes/header') %>
+
+    <main>
+        <article>
+            <hr>
+            <h1><%= post.title %></h1>
+            <hr>
+            <h2><%= post.summary %></h2>
+            <p><%= post.describtion %></p>
+            <h3>By <%= post.author %></h3>
+        </article>
+    </main>
+
+    <%- include('includes/footer') %>
+    
+</body>
+</html>

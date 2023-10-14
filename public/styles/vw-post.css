@@ -1,0 +1,32 @@
+article {
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    padding-top: 10rem;
+}
+
+article h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 1.8rem;
+    color: rgb(35, 35, 35);
+}
+
+article h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    color: rgb(35, 35, 35);
+}
+
+article p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    color: rgb(35, 35, 35);
+    padding: 2rem;
+}
+
+article h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    color: rgb(35, 35, 35);
+    font-style: italic;
+}

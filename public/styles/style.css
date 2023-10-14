@@ -1,0 +1,241 @@
+body {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+#main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 4rem;
+    border-bottom: 1px solid rgb(50, 50, 50);
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#page-logo {
+    margin: 0;
+    padding: 0;
+    font-size: 2.1rem;
+    font-family: 'Merriweather', serif;
+    text-decoration: none;
+    color: rgb(20, 20, 20);
+}
+
+#main-header ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    margin-right: 1rem;
+    color: rgb(85, 85, 85);
+    font-size: 1.1rem;
+    font-family: 'Roboto', sans-serif;
+    padding: 0.8rem;
+}
+
+#ct-post {
+    border: 1.8px solid rgb(85, 85, 85);
+}
+
+#ct-post:hover {
+    color: black;
+    border: 1.8px solid black;
+}
+
+#vw-post:hover {
+    color: black;
+    border-bottom: 2px solid black;
+}
+
+/* styling our main part */
+
+#sr-pg {
+    background-image: url('/files/images/main-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    padding-top: 5rem;
+    text-align: center;
+}
+
+#sr-pg h2 {
+    margin: 0;
+    font-family: 'Merriweather', serif;
+    font-size: 4rem;
+}
+
+#sr-pg h3 {
+    font-size: 1.5rem;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(177, 177, 177);
+}
+
+#sr-pg ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 3.5rem;
+}
+
+#sr-pg a {
+    text-decoration: none;
+    margin-right: 3rem;
+    font-size: 1.4rem;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(177, 177, 177);
+    border: 2px solid rgb(177, 177, 177);
+    padding: 1rem;
+}
+
+#sr-pg a:hover {
+    transform: scale(1.3);
+    transition: .1s;
+    color: white;
+    border: 2.5px solid white;
+}
+
+#it-con {
+    height: 15.7rem;
+    margin-top: 10%;
+}
+
+/* styling of the footer */
+
+#main-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.5rem 3rem;
+    background-color: rgb(15, 16, 18);
+}
+
+#main-footer p {
+    color: white;
+    font-family: 'Merriweather', serif;
+    font-size: 0.8rem;
+}
+
+#main-footer ul {
+    list-style: none;
+    display: flex;
+}
+
+#main-footer a {
+    text-decoration: none;
+    margin-right: 2rem;
+    color: white;
+    font-family: 'Merriweather', serif;
+    font-size: 0.8rem;
+}
+
+
+/* styling of the scrollbar */
+
+::-webkit-scrollbar {
+    width: 0.7rem;
+    margin-block: 1rem;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(212, 212, 212);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(10, 10, 10, 0.6);
+    border-radius: 100vw;
+    border: .15em solid rgb(212, 212, 212);
+    
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(10, 10, 10, 0.8);
+}
+
+/* Styling of Side Drawer */
+
+#sd-con {
+    display: none;
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 2rem;
+}
+
+#sd {
+    /* display: none; */
+    list-style: none;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#sd a {
+    text-decoration: none;
+    color: rgb(25, 25, 25);
+    line-height: 2rem;
+    font-weight: 550;
+}
+
+#sd a:hover {
+    color: rgb(35, 35, 35);
+}
+
+#hum-menu {
+    display: none;
+    width: 2rem;
+}
+
+nav img:hover {
+    cursor: pointer;
+}
+
+#cls-menu {
+    display: none;
+    width: 2rem;
+}
+
+.show-cls {
+    display: block;
+}
+
+.hid-cls {
+    display: none;
+}
+
+@media(max-width: 48rem) {
+    #hum-menu {
+        display: block;
+    }
+
+    #main-header ul {
+        display: none;
+    }
+
+    #main-footer {
+        display: block;
+        text-align: center;
+    }
+
+    #main-footer ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    #it-con {
+        margin-top: 45%;
+    }
+}
+

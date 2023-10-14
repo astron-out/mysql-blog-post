@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upgrade</title>
+    <%- include('includes/fonts') %>
+        <link rel="stylesheet" href="/styles/style.css">
+        <link rel="stylesheet" href="/styles/form.css">
+</head>
+
+<body>
+    <%- include('includes/header') %>
+
+        <main>
+                <section id="form-sec">
+                    <div id="ct-con">
+                        <form id="ct-form" action="">
+                            <h1>Update Post</h1>
+                            <label for="titauth">Author Name*</label>
+                            <input type="text" name="titleauthor" id="titauth" required>
+                            <label for="titpos">Post Title*</label>
+                            <input type="text" name="tilepost" id="titpos" required>
+                            <label for="sumpos">Post Summary*</label>
+                            <input type="text" name="summary" id="sumpos" required>
+                            <label for="des-con">Describtion*</label>
+                            <textarea name="describtion" id="des-con" rows="6" required></textarea>
+                            <button id="ct-btn">Update</button>
+                        </form>
+                    </div>
+
+                    <div id="text-con">
+                        <h2>Upgrade Your Post</h2>
+                        <p id="st">Here you can edit anything on your post.Create many other posts for helping to share
+                            WorldWide information and facts.</p>
+                        <p id="ws">Wish you success!</p>
+                    </div>
+                </section>
+        </main>
+
+        <%- include('includes/footer') %>
+
+</body>
+
+</html>

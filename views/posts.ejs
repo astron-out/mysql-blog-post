@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posts</title>
+    <%- include('includes/fonts') %>
+        <link rel="stylesheet" href="/styles/style.css">
+        <link rel="stylesheet" href="/styles/posts.css">
+        <script src="/script/script.js" defer></script>
+</head>
+
+<body>
+    <%- include('includes/header') %>
+
+        <main>
+            <section id="sr-pg-ps">
+                <div id="text-con">
+                    <h1 id="intro">Here you can find all the posts that created by our users!</h1>
+                    <p id="pph">This posts are about the things that practised and seemed in the life!</p>
+                    <h2 id="ltct">If you don't have any posts, let's Create it!</h2>
+                    <a href="/create">Create Post</a>
+                </div>
+            </section>
+
+            <section id="post-sec">
+                <% if(!posts || posts.length===0) {%>
+                    <h2>No posts in there!</h2>
+                    <% } else { %>
+                        <ol>
+                            <% for(const post of posts) { %>
+                                <li>
+                                    <%- include('includes/post-details', {post: post}) %>
+                                </li>
+                                <% } %>
+                        </ol>
+                        <% } %>
+            </section>
+        </main>
+
+        <%- include('includes/footer') %>
+
+</body>
+
+</html>
